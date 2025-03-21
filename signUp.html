@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armazon Login</title>
+        <link rel="icon" href="img/icon.jpg">
+        <style>
+
+            body{
+                margin: 0;
+            }
+
+            .full_page{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 750px;
+            }
+
+            .full_page .logo_in img{
+                display: flex;
+                height: 150px;
+                width: 150px;
+            }
+
+            form{
+                
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                height: 320px;
+                align-items: center ;
+                padding: 50px 25px;
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+                border-radius: 10px;
+            }
+
+            form label{
+                font-family: "Inter" , sans-serif;
+                font-size: 30px;
+                margin-top: -5px;
+            }
+
+            form input{
+                margin: 10px;
+                width: 296.67px;
+                height: 30.33px;
+                border-radius: 5px;
+            }
+
+            form button{
+                width: 296.67px;
+                height: 30.33px;
+                border-radius: 20px;
+                background: yellow;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        
+     
+
+        <div class="full_page">
+            <div class="logo_in">
+                <img src="img/armazon.jpg" alt="">
+            </div>
+
+            <form class="information" action="" method="post">
+                <label>Sign up</label>
+                <input type="text" name="user" placeholder="Username" autofocus>
+                <br>
+                <input type="email" name="email" placeholder="Email" required >
+                <br>
+                <input type="password" name="Password" placeholder="Password" required>
+                <br>
+                <input type="password" name="Password" placeholder="Password" required>
+                <br>
+                <button type="submit">CREATE</button>
+
+            </form>
+
+           
+        </div>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Armazon | Online Store</title>
+        <link rel="icon" href="img/icon.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="top_header">
+                <div class="container">
+                    <a href="#" class="logo"><img src="img/armazon.jpg" alt=""></a>
+
+                    <form action="" class="search_box">
+                        <div class="select_box">
+                            <select name="category" id="category">
+                                <option value="All category">All category</option>
+                                <option value="Men's Clothing">Men's Clothing</option>
+                                <option value="Women's Clothing">Women's Clothing</option>
+                                <option value="Kids' Clothing">Kids' Clothing</option>
+                                <option value="Accessories">Accessories</option>
+                                <option value="Footwear">Footwear</option>
+                            </select>
+                        </div>
+                    
+
+                        <input type="text" name="search" id="search" placeholder="Search Armazon" required>
+
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+
+                    </form>
+
+                    <div class="header_icons">
+                        <div onclick="open_close_cart()" class="icon">
+                            <a href="#">
+                                <i id="cart_shopping" class="fa-solid fa-cart-shopping"></i>
+                                <span class="count count_item_header">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom_header">
+                <div class="container">
+                    <nav class="nav">
+
+                        <span onclick="Open_menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+
+
+                        <ul class="nav_links">
+
+                            <span onclick="Open_menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                            <li class="start"><a href="#">Home</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="login_signup btns">
+                        <a href="signIn.html" class="btn">Sign-in <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                        
+                        <a href="signUp.html" class="btn">Sign-up <i class="fa-solid fa-user-plus"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+     
+
+        <div class="banners_4">
+            <div class="container">
+
+                <div class="box">
+                    <a href="" class="link_btn"></a>
+                        <img src="img/benner_1-removebg-preview.png" alt="">
+                        <div class="text">
+                            <h3>Discount</h3>
+                            <div class="sale">
+                                <p>Up <br> To</p>
+                                <span>70%</span>
+                            </div>
+                            <h6>Shop Now</h6>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <a href="" class="link_btn"></a>
+                        <img src="img/benner_2-removebg-preview.png" alt="">
+                        <div class="text">
+                            <h3>Discount</h3>
+                            <div class="sale">
+                                <p>Up <br> To</p>
+                                <span>70%</span>
+                            </div>
+                            <h6>Shop Now</h6>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <a href="" class="link_btn"></a>
+                        <img src="img/benner_3-removebg-preview.png" alt="">
+                        <div class="text">
+                            <h3>Discount</h3>
+                            <div class="sale">
+                                <p>Up <br> To</p>
+                                <span>70%</span>
+                            </div>
+                            <h6>Shop Now</h6>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <a href="" class="link_btn"></a>
+                        <img src="img/benner_4-removebg-preview.png" alt="">
+                        <div class="text">
+                            <h3>Discount</h3>
+                            <div class="sale">
+                                <p>Up <br> To</p>
+                                <span>70%</span>
+                            </div>
+                            <h6>Shop Now</h6>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="products banners_4" id="swiper_items_sale">
+            <!-- JavaScript -->
+        </div>
+
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <img src="img/icon.jpg" alt="">
+                    <h2>عن المتجر</h2>
+                    <p>متجر ملابس يقدم أحدث التصاميم العصرية بجودة عالية وأسعار مناسبة.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2>روابط سريعة</h2>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#">المنتجات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>تواصل معنا</h2>
+                    <p>storecras@gmail.com : البريد الإلكتروني</p>
+                    <p>الهاتف: 123-456-789</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=61556889610648" target="_blank"><i class="fa-brands fa-facebook"></i>facebook</a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i>instagram</a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2025 جميع الحقوق محفوظة | متجر الملابس</p>
+        </footer>
+
+        <div class="cart">
+            <div class="top_cart">
+                <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+                <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+    
+    
+            <div class="items_in_cart" id="cart_items">
+    
+                
+    
+                
+
+            </div>
+    
+    
+            <div class="bottom_cart">
+                <div class="total">
+                    <p>subtotal</p>
+                    <p class="price_cart_toral">$0</p>
+                </div>
+    
+                <div class="button_cart">
+                    <a href="checkout.html" class="btn_cart btn">Checkout</a>
+                    <span onclick="open_close_cart()" class="btn_cart trans_bg btn">Shop More</span>
+                </div>
+            </div>
+    
+        </div>
+        
+
+            
+
+               <!-- File JS -->
+                <script src="js/script.js"></script>
+               <script src="js/item_home.js"></script>
+               <script src="js/main.js"></script>
+    </body>
+</html>
